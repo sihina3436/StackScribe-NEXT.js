@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from "./_component/Footer";
 
 export const metadata: Metadata = {
   title: "Stack Scribe",
@@ -14,7 +15,10 @@ export default function RootLayout({
   return (
     <html
       lang="en">
-      <body className="min-h-screen bg-gray-200">{children}</body>
+      <body className="min-h-screen bg-gray-200">
+          {children}
+        <Footer/>
+      </body>
     </html>
   );
 }
