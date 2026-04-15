@@ -1,12 +1,12 @@
-import Image from "next/image";
+import HeroSection from "./_home/HeroSection";
+import BlogPage from "./blog/page";
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold">Welcome to Stack Scribe</h1>
-      <p className="mt-4 text-lg text-gray-600">
-        Your go-to platform for tech articles, tutorials, and insights.
-      </p>
+    <main className="min-h-screen w-full ">
+      <HeroSection/>
+      <BlogPage/>
     </main>
   );
 }
